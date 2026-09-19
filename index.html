@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCC Library Management System</title>
+    <meta
+      name="description"
+      content="A modern Library Management System (LMS) for managing books, authors, students, issuing, transactions, and reports."
+    />
+    <meta property="og:title" content="HCC Library Management System" />
+    <meta
+      property="og:description"
+      content="A modern Library Management System (LMS) for managing books, authors, students, issuing, transactions, and reports."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        try {
+          var origFetch = window.fetch;
+          var currentFetch = origFetch;
+          Object.defineProperty(window, "fetch", {
+            get: function () {
+              return currentFetch || origFetch;
+            },
+            set: function (val) {
+              currentFetch = val;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        } catch (e) {
+          // ignore error if property is non-configurable
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

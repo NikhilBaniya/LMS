@@ -1,0 +1,8 @@
+{
+  "name": "HCC Library Management System",
+  "description": "Comprehensive library management system for cataloging books, managing authors, student members, borrowing transactions, reservations, and inventory reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
